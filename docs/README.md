@@ -11,6 +11,7 @@
 - [triangle.py](triangle-py.md)
 
 ## История изменения
+- *a960bf1* - Add commits from 'main' branch to changelog in README.md
 - *fd3f43f* - Fix docs for more accuracy
 - *17d712b* - Add markdown docs for whole project
 - *78d8208* - Move README.md into math-formulas.md
