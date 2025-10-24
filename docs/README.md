@@ -11,6 +11,7 @@
 - [triangle.py](triangle-py.md)
 
 ## История изменения
+- *17d712b* - Add markdown docs for whole project
 - *78d8208* - Move README.md into math-formulas.md
 - *5b2cc8d* - Add docs before functions in whole project
 - *55b5917* - Fix computing perimiter in 'rectangle.py'
