@@ -23,4 +23,6 @@ def perimeter(a):
         Возвращаемое значение:
             Периметр квадрата со стороной длины 'a'.
     '''
+    if a <= 0: raise ValueError("Side must be positive!")
+
     return 4 * a
