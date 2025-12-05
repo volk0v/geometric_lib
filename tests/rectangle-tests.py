@@ -33,3 +33,35 @@ class RectangleTestCase(unittest.TestCase):
     def test_area_BothSidesAreNegative(self):
         with self.assertRaises(ValueError):
             rectangle.area(-1, -1)   
+
+    def test_perimeter_CorrectSides(self):
+        result = rectangle.perimeter(5, 10)
+        self.assertEqual(result, 30)
+
+    def test_perimeter_CorrectSidesButReversed(self):
+        result = rectangle.perimeter(10, 5)
+        self.assertEqual(result, 30)
+
+    def test_perimeter_FirstSideIsZero(self):
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(0, 5)
+
+    def test_perimeter_SecondSizeIsZero(self):
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(5, 0)
+
+    def test_perimeter_BothSidesAreZero(self):
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(0, 0)
+
+    def test_perimeter_OneSideIsNegative(self):
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(-1, 5)
+    
+    def test_perimeter_SecondSideIsNegative(self):
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(5, -1)
+
+    def test_perimeter_BothSidesAreNegative(self):
+        with self.assertRaises(ValueError):
+            rectangle.perimeter(-1, -1)
