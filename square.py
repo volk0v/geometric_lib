@@ -8,6 +8,8 @@ def area(a):
         Возвращаемое значение:
             Площадь квадрата со стороной длины 'a'.
     '''
+    if a <= 0: raise ValueError("Side must be positive!")
+
     return a * a
 
 
