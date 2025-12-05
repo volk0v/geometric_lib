@@ -9,6 +9,8 @@ def area(a, h):
         Возвращаемое значение:
             Площадь треугольника со стороной длины 'a' и высотой длины 'h', проведенной к стороне с длиной 'a'. 
     '''
+    if a <= 0 or h <= 0: raise ValueError("Side and height must be positive!")
+
     return a * h / 2
 
 
