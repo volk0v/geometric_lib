@@ -24,4 +24,6 @@ def perimeter(a, b):
         Возвращаемое значение:
             Периметр прямоугольника с длинами сторон 'a' и 'b'.
     '''
+    if a <= 0 or b <= 0: raise ValueError("Sides must be positive!")
+
     return 2 * (a + b)
