@@ -26,4 +26,6 @@ def perimeter(a, b, c):
         Возвращаемое значение:
             Периметр треугольника с длинами сторон 'a', 'b' и 'c'.
     '''
+    if a <= 0 or b <= 0 or c <= 0: raise ValueError("Sides must be positive!")
+
     return a + b + c
