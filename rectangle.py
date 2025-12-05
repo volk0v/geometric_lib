@@ -9,6 +9,8 @@ def area(a, b):
         Возвращаемое значение:
             Площадь прямоугольника с длинами сторон 'a' и 'b'.
     '''
+    if a <= 0 or b <= 0: raise ValueError("Sides must be positive!")
+
     return a * b
 
 def perimeter(a, b):
