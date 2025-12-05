@@ -26,5 +26,7 @@ def perimeter(r):
         Возвращаемое значение:
             Периметр круга с радиусом 'r'.
     '''
+    if r < 0: raise ValueError("Radius mustn't be negative!")
+
     return 2 * math.pi * r
 
