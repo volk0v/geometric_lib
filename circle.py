@@ -11,6 +11,8 @@ def area(r):
         Возвращаемое значение:
             Площадь круга с радиусом 'r'.
     '''
+    if r < 0: raise ValueError("Radius mustn't be negative!")
+
     return math.pi * r * r
 
 
